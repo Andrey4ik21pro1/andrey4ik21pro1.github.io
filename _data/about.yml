@@ -1,0 +1,19 @@
+- title: "Junior Python Developer"
+  subtitle: "Developing Python scripts to automate tasks and routine workflows."
+  icon: "terminal"
+
+- title: "Open Source Developer"
+  subtitle: "Dedicated to FOSS. My projects are licensed under GPL-3.0."
+  icon: "code_blocks"
+
+- title: "Android Enthusiast"
+  subtitle: "Building clean, open-source Android apps using Kotlin and Material 3."
+  icon: "android"
+
+- title: "Material Design & Google Fan"
+  subtitle: "Huge fan of Material You aesthetics and dynamic system colors."
+  icon: "palette"
+
+- title: "Based in Ukraine"
+  subtitle: "Living and coding in 🇺🇦 Ukraine. Love my country."
+  icon: "location_on"

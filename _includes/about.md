@@ -1,0 +1,4 @@
+- Python Junior Developer
+- Tech geek and open-source enthusiast
+- Fan of Google products
+- Living in 🇺🇦 Ukraine

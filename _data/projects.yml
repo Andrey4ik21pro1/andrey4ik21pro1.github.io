@@ -1,0 +1,35 @@
+- name: "ApkGit"
+  subtitle: "A Material 3 client to update apps from GitHub"
+  icon: "https://raw.githubusercontent.com/Andrey4ik21pro1/apkgit/main/app/src/main/play_store_512.png"
+  github: "https://github.com/Andrey4ik21pro1/apkgit"
+  custom_icon: false
+
+- name: "EyeDropper"
+  subtitle: "A system-native color picker tile for Android 17"
+  icon: "https://raw.githubusercontent.com/Andrey4ik21pro1/eyedropper/main/app/src/main/play_store_512.png"
+  github: "https://github.com/Andrey4ik21pro1/eyedropper"
+  custom_icon: false
+
+- name: "copy-template"
+  subtitle: "Shortcut to Copier"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  github: "https://github.com/Andrey4ik21pro1/copy-template"
+  custom_icon: true
+
+- name: "android-sdk-installer"
+  subtitle: "CLI tool for Android SDK installation and environment setup"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  github: "https://github.com/Andrey4ik21pro1/android-sdk-installer"
+  custom_icon: true
+
+- name: "chrome-setup"
+  subtitle: "Simple tool written in Powershell for downloading Google Chrome"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg"
+  github: "https://github.com/Andrey4ik21pro1/chrome-setup"
+  custom_icon: true
+
+- name: "revanced"
+  subtitle: "ReVanced apks builder using GitHub Actions"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg"
+  github: "https://github.com/Andrey4ik21pro1/revanced"
+  custom_icon: true
