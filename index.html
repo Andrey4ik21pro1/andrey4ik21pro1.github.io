@@ -6,7 +6,7 @@ layout: null
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Andrey4ik21pro1/Andrey4ik21pro1/main/profile.png">
+    <link rel="icon" type="image/png" href="{{ site.data.profile.avatar }}">
     <title>Profile</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,27 +15,35 @@ layout: null
     <script type="module" src="script.js"></script>
 </head>
 <body>
-    <content>
+    <main>
         <!-- home page -->
         <section id="home" class="page default">
             <h1>👋 Hi there!</h1>
 
             <div class="m3-card profile-card">
                 <div class="profile-avatar">
-                    <img src="https://raw.githubusercontent.com/Andrey4ik21pro1/Andrey4ik21pro1/main/profile.png">
+                    <img src="{{ site.data.profile.avatar }}">
                 </div>
-                <strong class="profile-nickname">Andrey4ik21pro1</strong>
-                <p class="profile-subtitle">Open Source Developer</p>
+                <strong class="profile-nickname">{{ site.data.profile.name }}</strong>
+                <p class="profile-subtitle">{{ site.data.profile.role }}</p>
             </div>
 
             <div class="m3-card">
-                {% capture contact %}{% include contact.md %}{% endcapture %}
-                {{ contact | markdownify }}
+                <h2>{{ site.data.profile.contacts_title }}</h2>
+                <ul>
+                    {%- for item in site.data.profile.contacts %}
+                    <li>{{ item.platform }}: <a href="{{ item.link }}">{{ item.handle }}</a></li>
+                    {%- endfor %}
+                </ul>
             </div>
 
             <div class="m3-card">
-                {% capture donate %}{% include donate.md %}{% endcapture %}
-                {{ donate | markdownify }}
+                <h2>{{ site.data.profile.support_title }}</h2>
+                <ul>
+                    {%- for wallet in site.data.profile.wallets %}
+                    <li>{{ wallet.type }}: <code>{{ wallet.address }}</code></li>
+                    {%- endfor %}
+                </ul>
             </div>
         </section>
 
@@ -45,7 +53,7 @@ layout: null
             {% for project in site.data.projects %}
             <div class="m3-card project-card">
                 <div class="project-content">
-                    <div class="{% if project.custom_icon %}project-icon-custom{% else %}project-icon{% endif %}">
+                    <div class="m3-icon {% if project.custom_icon %}custom-icon{% endif %}">
                         <img src="{{ project.icon }}">
                     </div>
 
@@ -69,7 +77,7 @@ layout: null
             {% for item in site.data.about %}
             <div class="m3-card about-card">
                 <div class="about-content">
-                    <div class="about-icon">
+                    <div class="m3-icon custom-icon">
                         <span class="material-symbols-rounded">{{ item.icon }}</span>
                     </div>
 
@@ -81,21 +89,21 @@ layout: null
             </div>
             {% endfor %}
         </section>
-    </content>
+    </main>
 
     <!-- navbar -->
     <nav>
         <a data-page="home" class="nav-link active">
-            <div class="icon-pill"><span class="material-symbols-rounded">home</span></div>
-            <span class="label">Home</span>
+            <div class="nav-icon-pill"><span class="material-symbols-rounded">home</span></div>
+            <span class="nav-label">Home</span>
         </a>
         <a data-page="projects" class="nav-link">
-            <div class="icon-pill"><span class="material-symbols-rounded">terminal</span></div>
-            <span class="label">Projects</span>
+            <div class="nav-icon-pill"><span class="material-symbols-rounded">terminal</span></div>
+            <span class="nav-label">Projects</span>
         </a>
         <a data-page="about" class="nav-link">
-            <div class="icon-pill"><span class="material-symbols-rounded">account_circle</span></div>
-            <span class="label">About</span>
+            <div class="nav-icon-pill"><span class="material-symbols-rounded">account_circle</span></div>
+            <span class="nav-label">About</span>
         </a>
     </nav>
 

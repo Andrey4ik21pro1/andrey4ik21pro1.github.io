@@ -1,0 +1,18 @@
+name: "Andrey4ik21pro1"
+role: "Open Source Developer"
+avatar: "https://raw.githubusercontent.com/Andrey4ik21pro1/Andrey4ik21pro1/main/profile.png"
+
+contacts_title: "📬 Contacts"
+contacts:
+  - platform: "Telegram"
+    link: "https://t.me/andrey4ik21pro1"
+    handle: "@andrey4ik21pro1"
+
+support_title: "💖 Support My Work"
+wallets:
+  - type: "USDT (TON)"
+    address: "UQC6nQbdL8oTBfbSxKZcjH04ICsHRCemFQPo2XAu65t1P8fd"
+  - type: "ETH"
+    address: "0xa369b5c4690F1A36Cff5bEA25A5bD1776d26969E"
+  - type: "BTC"
+    address: "bc1qlzx50nqwm6pthd2j3z74ecq3qx6s2sjsn38gld"
