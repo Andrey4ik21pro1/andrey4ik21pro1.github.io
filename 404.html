@@ -2,24 +2,39 @@
 permalink: /404.html
 layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ site.data.profile.avatar }}">
+    <title>404 — Not Found</title>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <link rel="stylesheet" href="/404.css">
+    <script type="module" src="/script.js"></script>
+</head>
+<body>
+    <main>
+      <div class="error-num">404</div>
 
-<div class="container">
-  <h1>404</h1>
+      <section class="page page-404">
+          <div class="m3-card error-card">
+              <div class="error-icon-container">
+                  <span class="material-symbols-rounded">search_off</span>
+              </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+              <strong class="error-title">Oops!</strong>
+              <p class="error-text">This page doesn't exist.</p>
+
+              <md-filled-tonal-button onclick="window.history.back()">
+                  <md-icon slot="icon"><span class="material-symbols-rounded">arrow_back</span></md-icon>
+                  Go Back
+              </md-filled-tonal-button>
+          </div>
+      </section>
+  </main>
+
+</body>
+</html>
