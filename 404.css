@@ -72,9 +72,7 @@ main {
     padding: 0 16px;
 }
 
-md-filled-tonal-button md-icon .material-symbols-rounded,
-md-filled-button md-icon .material-symbols-rounded,
-md-outlined-button md-icon .material-symbols-rounded {
+md-filled-tonal-button md-icon .material-symbols-rounded {
     display: block;
     font-size: 20px !important;
     width: 20px;
@@ -84,9 +82,7 @@ md-outlined-button md-icon .material-symbols-rounded {
     top: 0.5px;
 }
 
-md-filled-tonal-button md-icon,
-md-filled-button md-icon,
-md-outlined-button md-icon {
+md-filled-tonal-button md-icon {
     display: flex !important;
     width: 20px !important;
     height: 20px !important;

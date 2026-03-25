@@ -53,8 +53,8 @@ md-filled-tonal-button {
     width: 24px;
     height: 24px;
     background-color: currentColor;
-    mask: url('assets/github-icon.svg') no-repeat center / 22px;
-    -webkit-mask: url('assets/github-icon.svg') no-repeat center / 22px;
+    mask: url('/assets/github-icon.svg') no-repeat center / 22px;
+    -webkit-mask: url('/assets/github-icon.svg') no-repeat center / 22px;
     vertical-align: middle;
 }
 
