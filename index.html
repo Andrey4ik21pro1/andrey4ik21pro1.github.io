@@ -29,20 +29,20 @@ layout: null
             </div>
 
             <div class="m3-card">
-                <h2>{{ site.data.profile.contacts_title }}</h2>
+                <h2>📬 Contacts</h2>
                 <ul>
-                    {%- for item in site.data.profile.contacts %}
+                    {% for item in site.data.profile.contacts %}
                     <li>{{ item.platform }}: <a href="{{ item.link }}">{{ item.handle }}</a></li>
-                    {%- endfor %}
+                    {% endfor %}
                 </ul>
             </div>
 
             <div class="m3-card">
-                <h2>{{ site.data.profile.support_title }}</h2>
+                <h2>💖 Support My Work</h2>
                 <ul>
-                    {%- for wallet in site.data.profile.wallets %}
+                    {% for wallet in site.data.profile.wallets %}
                     <li>{{ wallet.type }}: <code>{{ wallet.address }}</code></li>
-                    {%- endfor %}
+                    {% endfor %}
                 </ul>
             </div>
         </section>

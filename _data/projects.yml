@@ -16,10 +16,22 @@
   github: "https://github.com/Andrey4ik21pro1/copy-template"
   custom_icon: true
 
+- name: "mcservers"
+  subtitle: "Simple servers.dat editor"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  github: "https://github.com/Andrey4ik21pro1/mcservers"
+  custom_icon: true
+
 - name: "android-sdk-installer"
   subtitle: "CLI tool for Android SDK installation and environment setup"
   icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
   github: "https://github.com/Andrey4ik21pro1/android-sdk-installer"
+  custom_icon: true
+
+- name: "templates"
+  subtitle: "My personal project templates for Copier"
+  icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  github: "https://github.com/Andrey4ik21pro1/templates"
   custom_icon: true
 
 - name: "chrome-setup"

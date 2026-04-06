@@ -22,11 +22,11 @@ jobs:
           node-version: "24"
 
       - name: Install dependencies
-        run: npm install rollup @rollup/plugin-node-resolve @material/web
+        run: npm install rollup @rollup/plugin-node-resolve @material/web minify
 
       - name: Build JS Bundle with Rollup
         run: |
-          npx rollup -p @rollup/plugin-node-resolve script.js -o bundle.js --format es
+          npx rollup -p @rollup/plugin-node-resolve script.js -o bundle.js
           mv bundle.js script.js
 
       - name: Setup Pages
@@ -34,6 +34,22 @@ jobs:
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        with:
+          destination: "./build"
+
+      - name: Minify files
+        run: |
+          cp -r build build_rw
+
+          mapfile -t files < <(find build_rw -type f \( -name "*.html" -o -name "*.css" \))
+
+          for file in "${files[@]}"; do
+            tmp=$(mktemp)
+            npx minify "$file" --fail-on-error > "$tmp" && mv "$tmp" "$file"
+            echo "Minified: $file"
+          done
+
+          mv build_rw _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
